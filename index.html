@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hey There!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="description" content="Ikeji Joshua is a skilled frontend web developer specializing in creating visually appealing and user-friendly websites. With expertise in HTML, CSS, JavaScript, and Python, he delivers high-quality web solutions tailored to your needs.">
+    <meta name="keywords" content="frontend web developer, web development, JavaScript, Python, responsive design, cybersecurity, web design">
+    <link rel="shortcut icon" href="assets/profile.jpg" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!---------------- HEADER--------------- -->
+    <div class="row mx-0 my-0">
+      <header class="col-3 px-0 position-fixed">
+        <div class="bg-color-black d-none d-md-flex flex-md-column">
+          <nav class="primary-nav navbar-expand-md">
+            <div class="site-title text-center py-5 text-light">
+              <a href="#" class="navbar-brand font-staal font-size-40"
+                >LANKYJO</a
+              >
+              <p class="title-desc text-uppercase font-os">Ikeji Joshua</p>
+            </div>
+
+            <div class="d-flex flex-column">
+              <a
+                href="#home"
+                class="nav-item nav-link text-white-50 font-os p-3 font-size-16"
+                >Home</a
+              >
+              <a
+                href="#ability"
+                class="nav-item nav-link text-white-50 font-os p-3 font-size-16"
+                >About</a
+              >
+              <a
+                href="#services"
+                class="nav-item nav-link text-white-50 font-os p-3 font-size-16"
+                >Services</a
+              >
+              <a
+                href="#portfolio"
+                class="nav-item nav-link text-white-50 font-os p-3 font-size-16"
+                >Portfolio</a
+              >
+              <a
+                href="#footer"
+                class="nav-item nav-link text-white-50 font-os p-3 font-size-16"
+                >Contact</a
+              >
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Offcanvas for smaller screens -->
+      <div
+        class="offcanvas offcanvas-start bg-color-black text-white w-75"
+        id="sidebarMenu"
+      >
+        <div class="offcanvas-header">
+          <!-- <h5 class="offcanvas-title font-staal">LANKYJO</h5> -->
+          <button
+            type="button"
+            class="close-btn"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <span class="fa-solid fa-times fa-2x"></span>
+          </button>
+        </div>
+        <nav class="primary-nav navbar-expand-md">
+          <div class="site-title text-center py-3">
+            <a href="#" class="navbar-brand font-staal font-size-40 text-white"
+              >LANKYJO</a
+            >
+            <p class="title-desc text-uppercase font-os text-white">
+              Ikeji Joshua
+            </p>
+          </div>
+
+          <div class="d-flex flex-column">
+            <a
+              href="#home"
+              class="nav-item nav-link text-white-50 font-os p-3 font-size-16"
+              >Home</a
+            >
+            <a
+              href="#ability"
+              class="nav-item nav-link text-white-50 font-os p-3 font-size-16"
+              >About</a
+            >
+            <a
+              href="#services"
+              class="nav-item nav-link text-white-50 font-os p-3 font-size-16"
+              >Services</a
+            >
+            <a
+              href="#portfolio"
+              class="nav-item nav-link text-white-50 font-os p-3 font-size-16"
+              >Portfolio</a
+            >
+            <a
+              href="#footer"
+              class="nav-item nav-link text-white-50 font-os p-3 font-size-16"
+              >Contact</a
+            >
+          </div>
+        </nav>
+      </div>
+      <!-- Offcanvas for smaller screens -->
+
+      <div class="col-md-9 px-0 offset-md-3">
+        <!-- -------------MAIN AREA----------------- -->
+        <main>
+          <button
+            class="toggle-btn d-block d-md-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sidebarMenu"
+          >
+            <span class="fa-solid fa-bars fa-2x"></span>
+          </button>
+          <!----------------HERO--------------- -->
+          <section class="site-banner z-0" id="home">
+            <div
+              class="banner-area text-center position-relative overflow-hidden"
+            >
+              <div class="author position-relative">
+                <div class="author-img"></div>
+                <h1
+                  class="text-uppercase font-staal text-white font-size-40 py-2"
+                >
+                  Ikeji Joshua
+                </h1>
+                <h5 class="text-white font-ramb font-size-27 text-capitalize">
+                  I'm <span id="typed"></span>
+                </h5>
+              </div>
+            </div>
+          </section>
+
+          <!-- ----------------ABOUT AREA---------------------- -->
+          <section id="about" class="about px-4 py-5">
+            <div class="about-me py-4">
+              <h5 class="text-uppercase font-os font-size-16 text-muted">
+                Information
+              </h5>
+              <h1 class="text-uppercase font-staal font-size-34">About me</h1>
+            </div>
+            <div class="row m-0">
+              <div class="col-sm-5 ps-0">
+                <img src="assets/profilemain.jpg" class="img-fluid" />
+              </div>
+              <div class="col-sm-6">
+                <h6 class="text-uppercase font-os font-size-16 pt-4">Me?</h6>
+                <h5 class="text-capitalize font-ramb font-size-20 fw-bold py-2">
+                  I am Ikeji Joshua. <span id="typed-2"></span>
+                </h5>
+                <p class="py-2 font-ramb text-black-50">
+                  I’m a Web Developer and Cybersecurity Specialist who
+                  transforms code into stunning websites and shields businesses
+                  from cyber threats. With a knack for JavaScript, Python, and
+                  Linux, I blend creativity with tech skills. When I’m not
+                  coding, I’m diving into new learning adventures and solving
+                  intriguing problems.
+                </p>
+                <div
+                  class="d-flex flex-row flex-wrap justify-content-between py-2"
+                >
+                  <div class="d-flex flex-column">
+                    <p class="font-wrap">
+                      <b
+                        >WhatsApp:
+                        <span class="text-black-50">+234 90-699-70965</span></b
+                      >
+                    </p>
+                    <p class="font-wrap">
+                      <b
+                        >Email:
+                        <span class="text-black-50"
+                          >Ikejijoshua@gmail.com</span
+                        ></b
+                      >
+                    </p>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <p class="font-wrap">
+                      <b
+                        >Degree:
+                        <span class="text-black-50">Bachelor's degree</span></b
+                      >
+                    </p>
+                    <p class="font-wrap">
+                      <b>X: <span class="text-black-50">@the_lankyjo</span></b>
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <a
+                    href="#services"
+                    class="btn btn-dark text-nowrap d-flex justify-content-center align-items-center text-uppercase me-3"
+                    >Hire Me</a
+                  >
+                  <a href="#portfolio" class="btn btn-dark text-uppercase"
+                    >Browse Portfolio</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!------------------- ABILITY------------------------- -->
+          <section id="ability" class="skill px-4 py-5 bg-light">
+            <div class="ability py-3">
+              <h5 class="text-uppercase font-os font-size-16 text-muted">
+                Abilities
+              </h5>
+              <h1 class="text-uppercase font-staal font-size-34">My Skills</h1>
+            </div>
+            <div class="row">
+              <div class="col-md-6 ps-4">
+                <p class="font-ramb font-size-16 text-black-50">
+                  I specialize in creating visually striking and highly
+                  functional websites using JavaScript and Python. My work
+                  integrates creativity with technical precision to ensure
+                  exceptional user experiences and optimal site performance.
+                </p>
+                <p class="font-ramb font-size-16 text-black-50">
+                  I look forward to fortifying businesses against cyber threats
+                  with comprehensive security solutions. Utilizing my knowledge
+                  of Linux and networking, I implement strategies to protect
+                  digital assets and maintain robust, secure systems.
+                </p>
+              </div>
+              <div class="col-md-6 bars mt-md-0 mt-5">
+                <div class="bar-1 pb-3">
+                  <div class="d-flex flex-row justify-content-between">
+                    <p class="font-ramb font-size-16 fw-bold text-uppercase">
+                      <span id="typed-3"></span>
+                    </p>
+                  </div>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Example with label"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar bg-black" style="width: 70%">
+                      70%
+                    </div>
+                  </div>
+                </div>
+                <div class="bar-2 pb-3">
+                  <div class="d-flex flex-row justify-content-between">
+                    <p class="font-ramb font-size-16 fw-bold text-uppercase">
+                      Linux
+                    </p>
+                  </div>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Example with label"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar bg-black" style="width: 90%">
+                      90%
+                    </div>
+                  </div>
+                </div>
+                <div class="bar-3">
+                  <div class="d-flex flex-row justify-content-between">
+                    <p class="font-ramb font-size-16 fw-bold text-uppercase">
+                      Basic Networking
+                    </p>
+                  </div>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Example with label"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar bg-black" style="width: 80%">
+                      80%
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!------------SERVICES------------------------- -->
+          <section id="services" class="services px-4 py-5">
+            <div class="do">
+              <h5 class="text-uppercase font-os font-size-16 text-muted">
+                What I do
+              </h5>
+              <h1 class="text-uppercase font-staal font-size-34">
+                My Services
+              </h1>
+              <div class="row">
+                <div class="col-md-4 col-sm-6 mb-4 text-center">
+                  <div class="panel border p-4">
+                    <span class="icon text-secondary">
+                      <i class="fas fa-laptop fa-3x"></i>
+                    </span>
+                    <h4 class="font-ramb py-4">Web Development</h4>
+                    <p class="font-ramb fonnt-size-16 text-black-50">
+                      I create visually stunning, user-focused websites that
+                      combine creativity with seamless functionality.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-4 text-center">
+                  <div class="panel border p-4">
+                    <span class="icon text-secondary">
+                      <i class="fas fa-lightbulb fa-3x"></i>
+                    </span>
+                    <h4 class="font-ramb py-4">Problem solving</h4>
+                    <p class="font-ramb fonnt-size-16 text-black-50">
+                      I tackle complex challenges with innovative solutions,
+                      ensuring your digital presence is secure and effective.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-4 text-center">
+                  <div class="panel border p-4">
+                    <span class="icon text-secondary">
+                      <i class="fas fa-mobile-alt fa-3x"></i>
+                    </span>
+                    <h4 class="font-ramb py-4">Fully Responsive</h4>
+                    <p class="font-ramb fonnt-size-16 text-black-50">
+                      I provide fully responsive solutions, ensuring seamless
+                      experiences across all devices and screen sizes.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-12 col-sm-6 mb-4 text-center">
+                  <div class="panel border p-4">
+                    <span class="icon text-secondary">
+                      <i class="fa-solid fa-pen-nib fa-3x"></i>
+                    </span>
+                    <h4 class="font-ramb py-4">Design Implementation</h4>
+                    <p class="font-ramb fonnt-size-16 text-black-50">
+                      Turning ideas into reality with precise, creative design
+                      implementation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-----------------PORTFOLIO------------------------- -->
+          <section id="portfolio" class="portfolio px-4 py-5 bg-light">
+            <h5 class="text-uppercase font-os font-size-16 text-muted">
+              Portfolio
+            </h5>
+            <h1 class="text-uppercase font-staal font-size-34">
+              Creative Work
+            </h1>
+
+            <div class="row">
+              <div class="col-sm-6 col-lg-3">
+                <div class="card" style="width: 18rem">
+                  <img src="assets/web1.png" class="card-img-top" />
+                  <div class="card-body">
+                    <h5 class="card-title">Animated Landing page</h5>
+                    <p class="card-text">
+                      A dynamic, visually appealing landing page featuring
+                      smooth animations and modern design elements for an
+                      engaging user experience.
+                    </p>
+                    <a
+                      href="https://landing-page-lanky.vercel.app/"
+                      target="_blank"
+                      class="btn btn-dark"
+                      >Live preview</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3 mt-3 mt-md-0">
+                <div class="card" style="width: 18rem">
+                  <img src="assets/web2.png" class="card-img-top" />
+                  <div class="card-body">
+                    <h5 class="card-title">Social Media Concept</h5>
+                    <p class="card-text">
+                      A modern, user-centric platform design focused on
+                      enhancing online interactions with a sleek, intuitive
+                      interface.
+                    </p>
+                    <a
+                      href="https://chatspace-xi.vercel.app/"
+                      target="_blank"
+                      class="btn btn-dark"
+                      >Live preview</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3 mt-3 mt-lg-0">
+                <div class="card" style="width: 18rem">
+                  <img src="assets/web3.png" class="card-img-top" />
+                  <div class="card-body">
+                    <h5 class="card-title">Barcode generator</h5>
+                    <p class="card-text">
+                      An efficient tool for creating customizable barcodes,
+                      offering ease of use and precise output for various
+                      applications.
+                    </p>
+                    <a
+                      href="https://qrcode-maker-lovat.vercel.app/"
+                      target="_blank"
+                      class="btn btn-dark"
+                      >Live preview</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3 mt-3 mt-lg-0">
+                <div class="card" style="width: 18rem">
+                  <img src="assets/web4.png" class="card-img-top" />
+                  <div class="card-body">
+                    <h5 class="card-title">Responsive Food Website</h5>
+                    <p class="card-text">
+                      A mobile-friendly, visually delicious website designed to
+                      showcase culinary delights, with seamless navigation
+                      across all devices.
+                    </p>
+                    <a
+                      href="https://lanky-burgersite.netlify.app/"
+                      target="_blank"
+                      class="btn btn-dark"
+                      >Live preview</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <footer id="footer" class="px-4 py-5">
+            <div id="contact">
+              <h5 class="text-uppercase font-os font-size-16 text-muted">
+                Connect
+              </h5>
+              <h1 class="text-uppercase font-staal font-size-34">Contact Me</h1>
+              <div class="row py-3">
+                <div class="col-sm-6">
+                  <h4 class="text-uppercase font-size-16 font-ramb text-dark">
+                    LankyJo solutions
+                  </h4>
+                  <p class="font-ramb font-size-16 text-black-50">
+                    PHONE: +234 90-699-70965
+                  </p>
+                  <p class="font-ramb font-size-16 text-black-50">
+                    EMAIL: ikejijoshua69@gmail.com
+                  </p>
+                  <p class="font-ramb font-size-16 text-black-50">
+                    ADDRESS: Abuja, Nigeria
+                  </p>
+                </div>
+                <div class="col-sm-6">
+                  <h4
+                    class="text-uppercase font-ramb font-size-16 mt-3 mt-md-0"
+                  >
+                    Get in touch
+                  </h4>
+                  <form action="">
+                    <div class="row pb-4">
+                      <div class="col">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Name"
+                        />
+                      </div>
+                      <div class="col">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Email"
+                        />
+                      </div>
+                    </div>
+                    <textarea
+                      name=""
+                      id=""
+                      placeholder="Message"
+                      class="form-control"
+                    ></textarea>
+                    <button type="submit" class="btn btn-dark my-3">
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+
+              <div class="row bg-light py-5">
+                <div class="col-sm-4 text-center">
+                  <h6 class="font-size-16 font-ramb text-black-50">
+                    &copy; 2024 LankyJo Solutions
+                  </h6>
+                </div>
+                <div class="col-sm-4 text-center my-4 my-md-0">
+                  <a
+                    href="#"
+                    class="navbar-brand font-size-40 font-staal text-black"
+                    >Lankyjo</a
+                  >
+                  <p class="text-uppercase font-os font-size-16 text-black-50">
+                    Ikeji Joshua
+                  </p>
+                </div>
+                <div class="col-sm-4 my-4 my-md-0 text-center">
+                  <a
+                    href="https://www.instagram.com/thelankyjo/"
+                    class="btn-link"
+                    ><i class="fa-brands fa-instagram fa-2x text-black me-2"></i
+                  ></a>
+                  <a href="https://x.com/The_lankyjo" class="btn-link"
+                    ><i class="fa-brands fa-x-twitter fa-2x text-black me-2"></i
+                  ></a>
+                  <a
+                    href="https://wa.me/2349016428035?text=Hey%20there!%20Your%20website%20is%20awesome%20🌟%20and%20I%20could%20really%20use%20your%20skills%20for%20a%20web%20project.%20Let's%20chat!
+                        "
+                    class="btn-link"
+                    ><i class="fa-brands fa-whatsapp fa-2x text-black"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </main>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#typed", {
+        strings: [
+          "a Web Developer.",
+          "a FreeLancer.",
+          "a Cybersecurity Aficionado",
+          "a learner.",
+          "am awesome!"
+        ],
+        typeSpeed: 90,
+      });
+      var typed = new Typed("#typed-2", {
+        strings: ["I am a web Developer", "Nice to meet you👋!"],
+        typeSpeed: 150,
+        startDelay: 2300,
+      });
+      var typed = new Typed("#typed-3", {
+        strings: ["HTML, CSS", "ReactJS", "Developer"],
+        typeSpeed: 30,
+      });
+    </script>
+  </body>
+</html>
