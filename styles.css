@@ -27,6 +27,9 @@ body{
 .bg-color-black{
     background: var(--color-black);
 }
+.bg-color-white{
+    background: var(---color-white);
+}
 .font-size-40{
     font-size: 40px !important;
 }
